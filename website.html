@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title> tenloe shop</title>
+    <link rel="icon" href="Ten.png" type="image/png">
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="Ten.png" alt="">
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#customers">Customers</a></li>
+        </ul>
+        <div class="header-icon">
+            <i class='bx bx-cart-alt' onclick="toggleCart()"></i>
+            <i class='bx bx-search' id="search-icon"></i>
+        </div>
+        <div class="search-box">
+            <input type="text" name="" id="searchInput" placeholder="Search Here...">
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Start your day <br> with our product</h1>
+            <p>Ten</p>
+            <a href="#" class="btn">Shop Now</a>
+
+        </div>
+        <div class="home-img">
+            <img src="bear.png" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="tur.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>About us</h2>
+            <p> Tenloe Shop is an online store that sells handmade products, such as the Blue Bear and Blue Cow with special-smelling backpacks. Since we are a newly established online shop, our product range is currently limited. If you reside abroad, please note that there may be a wait time for the delivery of our products.
+            </p>
+            <a href="about.html" class="btn">Learn More</a>
+        </div>
+    </section>
+    <section class="products" id="products">
+            <div class="heading">
+                <h2>Our popular products</h2>
+            </div>
+        
+        <div class="products-container">
+            <div class="box" data-search="Guitar bag">
+                <img src="g.jpeg" alt="">
+                <h3>Guitar bag</h3>
+                <div class="content">
+                    <span>$10</span>
+                    <a href="#" class="buy-btn" data-product-name="Guitar Bag" data-product-price="10.00">Add to Cart</a>
+                    <a href="Product.html">Learn More</a>
+                </div>
+            </div>
+            <div class="box" data-search="Guitar bag">
+                <img src="gu.jpeg" alt="">
+                <h3>Guitar bag</h3>
+                <div class="content">
+                    <span>$10</span>
+                    <a href="#" class="buy-btn" data-product-name="Guitar Bag" data-product-price="10.00">Add to Cart</a>
+                    <a href="Product.html">Learn More</a>
+                </div>
+            </div> 
+            <div class="box" data-search="Guitar bag">
+                <img src="fe.jpeg" alt="">
+                <h3>Guitar bag</h3>
+                <div class="content">
+                    <span>$10</span>
+                    <a href="#" class="buy-btn" data-product-name="Guitar Bag" data-product-price="10.00">Add to Cart</a>
+                    <a href="Product.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+    <div id="cart-box" class="cart-box">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <i class='bx bx-x' onclick="toggleCart()"></i>
+        </div>
+        <ul id="cart-list" class="cart-list"></ul>
+        <div class="cart-footer">
+            <p>Total Price: $<span id="total">0.00</span></p>
+            <button onclick="buyNow()">Buy Now</button>
+            <button id="cancel-btn">Cancel</button>
+        </div>
+    </div>
+<section class="customers" id="customers">
+    <div class="heading">
+        <h2>Our customers</h2>
+    </div>
+    <div class="customers-container">
+        <div class="box">
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+            </div>
+            <p>Good</p>
+            <h2>Bob</h2>
+            <img src="bear.png" alt="">
+        </div>
+        <div class="box">
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+            </div>
+            <p>Good</p>
+            <h2>Bob</h2>
+            <img src="bear.png" alt="">
+        </div>
+        <div class="box">
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+            </div>
+            <p>Good</p>
+            <h2>Bob</h2>
+            <img src="bear.png" alt="">
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="footer-box">
+        <h2>Ten Loe shop</h2>
+        <p>Good</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+        </div>
+    </div>
+    <div class="footer-box">
+        <h3>Support</h3>
+        <li><a href = "#products">Products</a></li>
+        <li><a href = "#">Help & Support</a></li>
+        <li><a href = "#">Return Policy</a></li>
+        <li><a href = "#">Terms Of Use</a></li>
+        <li><a href = "#products" >Product</a></li>
+    </div>
+    <div class="footer-box">
+        <h3>View Guides</h3>
+        <li><a href = "#">Features</a></li>
+        <li><a href = "#">Careers</a></li>
+        <li><a href = "Blog Spot.html">Blog Posts</a></li>
+        <li><a href = "#">Our Branches</a></li>
+    </div>
+    <div class="footer-box">
+        <h3>Contact</h3>
+        <div class="contact">
+            <span><i class='bx bxs-map'></i>Indonesia, Jakarta</span>
+            <span><i class='bx bxs-phone'></i>+62 81310243422</span>
+            <span><i class='bx bxs-envelope'></i>tenlu10@gmail.com</span>
+        </div>
+    </div>    
+</section>
+<div class="copyright">
+    <p>&#169, tenloe All Right Reserved</p>
+</div>
+    <script src="website.js"></script>
+</body>
+</html>

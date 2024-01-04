@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, inital-scale=1.0">
+       <title> tenloe shop</title>
+       <link rel="icon" href="Ten.png" type="image/png">
+       <link rel="stylesheet" href="Product.css">
+       <link rel="stylesheet"
+     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+  
+    <header>
+        <a href="#" class="logo">
+            <img src="Ten.png" alt="">
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <ul class="navbar">
+            <li><a href="#dolls">Dolls</a></li>
+            <li><a href="#stamps">Stamps</a></li>
+            <li><a href="#comment-box">Comment</a></li>
+        </ul>
+        <div class="header-icon">
+            <i class='bx bx-cart-alt' onclick="toggleCart()"></i>
+            <i class='bx bx-search' id="search-icon"></i>
+        </div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search Here...">
+        </div>
+    </header>
+
+    <section class="bear">
+        <div class="image">
+            <img src="bear.png" alt="Bear Image">
+        </div>
+        <div class="txt">
+            <h2>Bear</h2>
+            <h4>Only remaining <span id="remaining">11</span></h4>
+            <p>Description:</p>
+            <h3>$10</h3>
+            <a href="#" onclick="buyNow()">Buy Now</a>
+        </div>
+    </section>    
+
+    <div id="comment-box">
+      <h2>Comments for the product bear</h2>
+      <ul id="comment-list"></ul>
+      <input type="text" id="name-input" placeholder="Your Name">
+      <textarea id="comment-input" placeholder="Type your comment here..."></textarea>
+      <label for="rating-input">Rating:</label>
+      <input type="number" id="rating-input" min="1" max="5" placeholder="1-5">
+      <button id="submit-btn" onclick="submitComment()">Submit Comment</button>
+    </div>
+
+    <section class="products" id="dolls">
+        <div class="heading">
+            <h2>Our products dolls</h2>
+        </div>
+    
+    <div class="products-container">
+        <div class="box" data-search="Guitar bag">
+            <img src="g.jpeg" alt="">
+            <h3>Guitar bag</h3>
+            <div class="content">
+                <span>$10</span>
+                <a href="#" class="buy-btn" data-product-name="Guitar Bag" data-product-price="10.00">Add to Cart</a>
+                <a href="Product.html">Learn More</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="gu.jpeg" alt="">
+            <h3>Guitar bag</h3>
+            <div class="content">
+                <span>$10</span>
+                <a href="#">Add to cart</a>
+            </div>
+        </div> 
+        <div class="box">
+            <img src="fe.jpeg" alt="">
+            <h3>Guitar bag</h3>
+            <div class="content">
+                <span>$10</span>
+                <a href="#">Add to cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+    <div id="cart-box" class="cart-box">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <i class='bx bx-x' onclick="toggleCart()"></i>
+        </div>
+        <ul id="cart-list" class="cart-list"></ul>
+        <div class="cart-footer">
+            <p>Total Price: $<span id="total">0.00</span></p>
+            <button onclick="buyNow()">Buy Now</button>
+            <button id="cancel-btn">Cancel</button>
+        </div>
+    </div>
+    <script src="Product.js"></script>
+</body>
+</html>
